@@ -14,13 +14,13 @@
 
 
 body {
-  position: relative;
-  height: 700px;
-  background: linear-gradient(180deg, #BE576A 7.28%, #68272C 41.46%, #120002 90.19%);
+  //position: relative;
+  //height: 700px;
+  //background: linear-gradient(180deg, #BE576A 7.28%, #68272C 41.46%, #120002 90.19%);
+  background: linear-gradient(rgba(190,87,106,0.5), rgba(104,39,44,1))
 }
 
 h1 {
-
   font-family: 'Thasadith', ;
   font-style: normal;
   font-weight: normal;
@@ -34,4 +34,14 @@ a:link {
   font-style: normal;
   font-weight: normal;
   color: white;
+}
+
+h4, .require {
+  font-family: 'Comfortaa', ;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.row-cols-1 {
+  margin: 0px;
 }

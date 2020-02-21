@@ -1,11 +1,11 @@
-<body>
-  <h1>New cocktail</h1>
+<div class="banner border-bottom border-white" style="background-color: #0E2836">
+  <h1 class="d-flex justify-content-center">New cocktail</h1>
+</div>
 
   <%= simple_form_for [@cocktail] do |f| %>
     <%= f.input :name %>
     <%= f.submit "Add a new cocktail", class: "btn btn-primary" %>
   <% end %>
 
-  <%= link_to "« Go back", cocktails_path %>
+  <%= link_to "« Back to the zone", cocktails_path %>
 
-</body>

@@ -1,2 +1,23 @@
 // Import page-specific CSS files here.
 @import "home";
+
+a {
+  color: white;
+  &:hover {
+    color: #C7A1E2;
+    text-decoration: none;
+  }
+}
+
+.cocktail-card {
+  border: 4px solid white;
+  padding: 0px;
+}
+
+.names {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(96,171,179,0.9), rgba(0,0,0,0));
+  padding-bottom: 20px;
+}
+
