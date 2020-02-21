@@ -11,3 +11,29 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+  position: relative;
+  height: 700px;
+  background: linear-gradient(180deg, #BE576A 7.28%, #68272C 41.46%, #120002 90.19%);
+}
+
+h1 {
+  position: absolute;
+  left: 450px;
+  top: 134px;
+  font-family: 'Thasadith', ;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 62px;
+  letter-spacing: 0.35em;
+}
+
+a:link {
+  font-family: 'Thasadith', ;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+}

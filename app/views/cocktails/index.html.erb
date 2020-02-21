@@ -1,21 +1,18 @@
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand" href="#">The zone</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <form class="form-inline">
-      <a class="btn btn-outline-warning my-2 my-sm-0" href="/cocktails/new">Add a cocktail</a>
-    </form>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">The zone</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <form class="form-inline">
+    <a class="btn btn-outline-warning my-2 my-sm-0" href="/cocktails/new">Add a cocktail</a>
+  </form>
+</nav>
   <h1 class="title">Cocktail Zone</h1>
-<div class="row row-cols-1 row-cols-md-6">
-  <div class="col mb-4">
-    <% @cocktails.each do |c| %>
-    <div class="card">
+<div class="row">
+  <% @cocktails.each do |c| %>
+    <div class="col-4 cocktail_card">
       <%= link_to c.name, c %>
-      <% end %>
     </div>
-  </div>
+  <% end %>
 </div>
-</body>
+
