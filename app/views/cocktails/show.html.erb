@@ -1,0 +1,32 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="/cocktails">The zone</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="form-inline my-2 my-lg-0">
+      <a class="btn btn-outline-warning my-2 my-sm-0" href="/cocktails/new">Add a cocktail</a>
+    </form>
+  </nav>
+  <h1><%= @cocktail.name %></h1>
+
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <h4>Ingredients</h4>
+      <ul>
+        <% @cocktail.doses.each do |dose| %>
+        <li> <%= dose.description %> <%= dose.ingredient.name %> <%= link_to 'Delete' %></li>
+        <% end %>
+      </ul>
+ </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <h4>Add a new ingredient</h4>
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
+    <%= f.submit "Add", class: "btn btn-primary" %>
+  </div>
+</div>
+<% end %>
