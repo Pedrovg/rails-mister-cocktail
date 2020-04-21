@@ -16,5 +16,6 @@
 // const imagePath = (name) => images(name, true)
 
 import 'bootstrap';
+import 'images'
 
 console.log('Hello World from Webpacker')
