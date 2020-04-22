@@ -16,7 +16,9 @@
       <div class="col-4 cocktail-card" style="width: 70rem; height: 15rem">
         <div class="names"> <%= link_to c.name, c %> </div>
         <%= link_to "Delete", cocktail_path(c), method: :delete, class: "cust-btn" %>
-        <img src="https://source.unsplash.com/collection/962396/372x188" alt="cocktail pic">
+        <% if c.photo.attached? %>
+          <%= cl_image_tag(c.photo.key, :cloud_name => "ddwthgkml") %>
+        <% end %>
      </div>
     <% end %>
   </div>

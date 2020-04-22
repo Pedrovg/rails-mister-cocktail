@@ -15,6 +15,7 @@
   <div class="form-group">
     <%= simple_form_for [@cocktail] do |f| %>
       <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
       <%= f.submit "Add a new cocktail", class: "btn add_new_btn" %>
     <% end %>
   </div>
