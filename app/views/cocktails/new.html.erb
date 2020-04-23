@@ -11,13 +11,17 @@
   <h1 class="d-flex justify-content-center">New Cocktail</h1>
 </div>
 
-<div class="container">
-  <div class="form-group">
-    <%= simple_form_for [@cocktail] do |f| %>
-      <%= f.input :name %>
-      <%= f.input :photo, as: :file %>
-      <%= f.submit "Add a new cocktail", class: "btn add_new_btn" %>
-    <% end %>
+<div class="container" style="width: 700px">
+  <div class="row">
+    <div class="col-lg">
+      <div class="form-group">
+        <%= simple_form_for [@cocktail] do |f| %>
+          <%= f.input :name %>
+          <%= f.input :photo, as: :file %>
+          <%= f.submit "Add a new cocktail", class: "btn add_new_btn" %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
 
