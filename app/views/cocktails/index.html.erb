@@ -15,14 +15,15 @@
     <% @cocktails.each do |c| %>
       <div class="col-4 cocktail-card" style="width: 70rem; height: 15rem">
         <div class="names"> <%= link_to c.name, c %> </div>
-        <%= link_to "Delete", cocktail_path(c), method: :delete, class: "cust-btn" %>
+        <div class="names2"> <%= link_to "Delete", cocktail_path(c), method: :delete, class: "cust-btn" %> </div>
         <% if c.photo.attached? %>
-          <%= cl_image_tag(c.photo.key, :cloud_name => "ddwthgkml") %>
+          <%= image_tag c.photo, class: "c-img" %>
         <% end %>
      </div>
     <% end %>
   </div>
 </div>
+
 
 
 
